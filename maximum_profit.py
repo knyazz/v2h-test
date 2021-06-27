@@ -8,7 +8,7 @@
 # Carefull with RecursionError: maximum recursion depth exceeded
 
 
-def max_profit(price, start, end):
+def max_profit(price: int, start: int, end: int) -> int:
     if (end <= start):
         return 0
 

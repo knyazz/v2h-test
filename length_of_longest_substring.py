@@ -7,7 +7,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--input', '-i', type=str, help="input string")
 
 
-def longest_unique_substtr(string):
+def longest_unique_substtr(string: str) -> int:
     start_idx = 0  # starting index of current window
     max_len = 0
     # last index of every character
