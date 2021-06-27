@@ -15,7 +15,6 @@ def smallest_missing_positive_int(nums: List[int] = None) -> int:
 
     # if one element in array
     if len(nums) == 1:
-        # If it contains only one element
         return 2 if nums[0] == 1 else 1
 
     l: int = [0] * m
@@ -29,7 +28,7 @@ def smallest_missing_positive_int(nums: List[int] = None) -> int:
         # Encountering first 0, i.e, the element with least value
         if l[i] == 0:
             return i + 1
-            # In case all values are filled between 1 and m
+    # all values are filled between 1 and m
     return i + 2
 
 

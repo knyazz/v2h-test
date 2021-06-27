@@ -17,8 +17,8 @@ def longest_unique_substtr(string: str) -> int:
     for idx, letter in enumerate(string):
 
         # Find the last index of str[i]
-        # Update start_idx as maximum of current value of start_idx and last
-        # index plus 1
+        # Update start_idx as maximum of current value of start_idx
+        # and last index plus 1
         if letter in last_idx:
             start_idx = max(start_idx, last_idx[letter] + 1)
 
