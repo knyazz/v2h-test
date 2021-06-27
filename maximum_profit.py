@@ -6,13 +6,15 @@
 
 # This implementation uses recursion.
 # Carefull with RecursionError: maximum recursion depth exceeded
+from typing import List
 
 
-def max_profit(price: int, start: int, end: int) -> int:
+def max_profit(price: List[int], start: int, end: int) -> int:
     if (end <= start):
         return 0
 
-    profit = 0
+    profit: int = 0
+    curr_profit: int = 0
 
     # Find the day of stock buing
     for i in range(start, end, 1):

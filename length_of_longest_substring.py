@@ -8,10 +8,10 @@ parser.add_argument('--input', '-i', type=str, help="input string")
 
 
 def longest_unique_substtr(string: str) -> int:
-    start_idx = 0  # starting index of current window
-    max_len = 0
+    start_idx: int = 0  # starting index of current window
+    max_len: int = 0
     # last index of every character
-    last_idx = {}
+    last_idx: dict[str, int] = {}
 
     # TODO: not use python `for in` expression
     for idx, letter in enumerate(string):
