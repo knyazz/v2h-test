@@ -2,10 +2,9 @@
 # Each element represents a price on a given day.
 # Return the smallest missing positive integer
 # for a given unsorted list of integers.
-from typing import List
 
 
-def smallest_missing_positive_int(nums: List[int] = None) -> int:
+def smallest_missing_positive_int(nums: list[int] = None) -> int:
     nums = nums or list()
 
     m: int = max(nums)

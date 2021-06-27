@@ -6,10 +6,9 @@
 
 # This implementation uses recursion.
 # Carefull with RecursionError: maximum recursion depth exceeded
-from typing import List
 
 
-def max_profit(price: List[int], start: int, end: int) -> int:
+def max_profit(price: list[int], start: int, end: int) -> int:
     if (end <= start):
         return 0
 

@@ -1,7 +1,6 @@
-import argparse
-
 # For a given string return the length of a longest substring
 # without repeating characters.
+import argparse
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--input', '-i', type=str, help="input string")
